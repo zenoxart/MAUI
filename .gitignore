@@ -1,0 +1,3 @@
+# Ignore bin and obj directories for C# projects
+**/bin/
+**/obj/
