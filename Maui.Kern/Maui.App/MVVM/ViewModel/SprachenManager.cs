@@ -1,5 +1,5 @@
 ﻿using Maui.App.Attributes;
-using Maui.App.MVVM.Utils;
+using Maui.App.Infrastuktur;
 using Maui.Erweitert;
 using Maui.Erweitert.Daten;
 using Maui.Erweitert.Komponenten;

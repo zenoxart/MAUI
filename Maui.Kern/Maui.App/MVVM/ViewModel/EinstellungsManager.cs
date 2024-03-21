@@ -1,5 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using Maui.App.MVVM.Utils;
+using Maui.App.Infrastuktur;
 using System;
 using System.Collections.Generic;
 using System.Linq;

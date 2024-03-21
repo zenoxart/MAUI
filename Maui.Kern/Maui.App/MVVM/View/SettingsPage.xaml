@@ -9,19 +9,16 @@
 	<VerticalStackLayout VerticalOptions="Start" >
 		<Label 
             Text="{Binding Sprachen.AkutelleUILokalisierung[SettingsText1], Mode=OneWay}"/>
-		
-		<StackLayout >
-			<Label Text="{Binding Sprachen.AkutelleUILokalisierung[SettingsSprachenText], Mode=OneWay}" />
-			<Picker
+
+        <StackLayout >
+            <Label Text="{Binding Sprachen.AkutelleUILokalisierung[SettingsSprachenText], Mode=OneWay}" />
+            <Picker
 					ItemsSource="{Binding Sprachen.Sprachenliste}"
 					ItemDisplayBinding="{Binding Name}"
 					SelectedItem="{Binding Sprachen.AktuelleSprache}"
 	
 					/>
-		</StackLayout>
+        </StackLayout>
 
-		<Label Text="Hello World"/>
-
-
-	</VerticalStackLayout>
+    </VerticalStackLayout>
 </ContentPage>

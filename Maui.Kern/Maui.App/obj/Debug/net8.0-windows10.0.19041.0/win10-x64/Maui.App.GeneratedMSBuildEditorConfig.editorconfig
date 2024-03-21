@@ -8,78 +8,78 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Maui.App
-build_property.ProjectDir = C:\Users\U731233\source\repos\Maui.Kern\Maui.App\
+build_property.ProjectDir = C:\Users\zenox\Documents\GitHub\MAUI\Maui.Kern\Maui.App\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/U731233/source/repos/Maui.Kern/Maui.App/App.xaml]
+[C:/Users/zenox/Documents/GitHub/MAUI/Maui.Kern/Maui.App/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.App.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/U731233/source/repos/Maui.Kern/Maui.App/AppShell.xaml]
+[C:/Users/zenox/Documents/GitHub/MAUI/Maui.Kern/Maui.App/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.App.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/U731233/source/repos/Maui.Kern/Maui.App/MVVM/Controls/LoginControl.xaml]
+[C:/Users/zenox/Documents/GitHub/MAUI/Maui.Kern/Maui.App/MVVM/Controls/LoginControl.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.App.MVVM.Controls.LoginControl.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Controls\LoginControl.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Controls\LoginControl.xaml
 
-[C:/Users/U731233/source/repos/Maui.Kern/Maui.App/MVVM/Controls/RegisterControl.xaml]
+[C:/Users/zenox/Documents/GitHub/MAUI/Maui.Kern/Maui.App/MVVM/Controls/RegisterControl.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.App.MVVM.Controls.RegisterControl.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Controls\RegisterControl.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Controls\RegisterControl.xaml
 
-[C:/Users/U731233/source/repos/Maui.Kern/Maui.App/MVVM/View/LoginPage.xaml]
+[C:/Users/zenox/Documents/GitHub/MAUI/Maui.Kern/Maui.App/MVVM/View/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.App.MVVM.View.LoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\View\LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\View\LoginPage.xaml
 
-[C:/Users/U731233/source/repos/Maui.Kern/Maui.App/MVVM/View/MainAppView.xaml]
+[C:/Users/zenox/Documents/GitHub/MAUI/Maui.Kern/Maui.App/MVVM/View/MainAppView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.App.MVVM.View.MainAppView.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\View\MainAppView.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\View\MainAppView.xaml
 
-[C:/Users/U731233/source/repos/Maui.Kern/Maui.App/MVVM/View/RegisterPage.xaml]
+[C:/Users/zenox/Documents/GitHub/MAUI/Maui.Kern/Maui.App/MVVM/View/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.App.MVVM.View.RegisterPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\View\RegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\View\RegisterPage.xaml
 
-[C:/Users/U731233/source/repos/Maui.Kern/Maui.App/MVVM/View/SettingsPage.xaml]
+[C:/Users/zenox/Documents/GitHub/MAUI/Maui.Kern/Maui.App/MVVM/View/SettingsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.App.MVVM.View.SettingsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\View\SettingsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\View\SettingsPage.xaml
 
-[C:/Users/U731233/source/repos/Maui.Kern/Maui.App/MVVM/View/Tabellen/Benutzerverwaltung.xaml]
+[C:/Users/zenox/Documents/GitHub/MAUI/Maui.Kern/Maui.App/MVVM/View/StartPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Maui.App.MVVM.View.StartPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\View\StartPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\View\StartPage.xaml
+
+[C:/Users/zenox/Documents/GitHub/MAUI/Maui.Kern/Maui.App/MVVM/View/Tabellen/Benutzerverwaltung.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.App.MVVM.View.Tabellen.Benutzerverwaltung.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\View\Tabellen\Benutzerverwaltung.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\View\Tabellen\Benutzerverwaltung.xaml
 
-[C:/Users/U731233/source/repos/Maui.Kern/Maui.App/Resources/Styles/Colors.xaml]
+[C:/Users/zenox/Documents/GitHub/MAUI/Maui.Kern/Maui.App/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.App.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/U731233/source/repos/Maui.Kern/Maui.App/Resources/Styles/Styles.xaml]
+[C:/Users/zenox/Documents/GitHub/MAUI/Maui.Kern/Maui.App/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.App.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
-
-[C:/Users/U731233/source/repos/Maui.Kern/Maui.App/StartPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Maui.App.StartPage.xaml
-build_metadata.AdditionalFiles.TargetPath = StartPage.xaml
-build_metadata.AdditionalFiles.RelativePath = StartPage.xaml

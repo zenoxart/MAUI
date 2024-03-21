@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Maui.Kern")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute(" ")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1effff96e89bb1c9038a6524f14bf6b05c11de09")]
 [assembly: System.Reflection.AssemblyProductAttribute("Maui.Kern")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Maui.Kern")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

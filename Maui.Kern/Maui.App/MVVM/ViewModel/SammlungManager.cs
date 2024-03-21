@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using Maui.App.MVVM.Utils;
+using Maui.App.Infrastuktur;
 using Maui.DatenObjekte;
+using Maui.Erweitert.Datenstrukturverwaltung;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -14,7 +15,7 @@ namespace Maui.App.MVVM.ViewModel
     /// Stellt einen Basismanager zum Visualisieren von Daten-Transfer-Objekten, ermöglicht das Laden, Aktuallisieren und Löschen von Elementen
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public abstract partial class SammlungManager<T> : MauiAppObjekt where T : IDto, new()
+    public abstract partial class SammlungManager<T> : ObservableCollectionManager where T : IDto, new()
     {
         /// <summary>
         /// Ruft das Selektierte Element ab oder legt dieses fest

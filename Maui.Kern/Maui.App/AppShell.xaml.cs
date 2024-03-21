@@ -1,4 +1,5 @@
-﻿using Maui.Kern.Daten;
+﻿using Maui.App.Infrastuktur;
+using Maui.Kern.Daten;
 using System.Globalization;
 
 namespace Maui.App
@@ -42,7 +43,7 @@ namespace Maui.App
         ///<summary>
         /// Öffentliches Feld für das Zugreifen auf die Business-Logik
         ///</summary>
-        public MVVM.Utils.Anwendung? AnwendungApp { get; set; }
+        public Anwendung? AnwendungApp { get; set; }
 
         
 
@@ -51,13 +52,13 @@ namespace Maui.App
         ///</summary>
         protected void MainAppProcess()
         {
-            var AppKontext = new MVVM.Utils.MauiAppKontext();
+            var AppKontext = new MauiAppKontext();
 
 
             // Ein Anwendungsfenster initialisieren
             // und sicherstellen, dass das Windows Forms Dispose läuft
             AnwendungApp = AppKontext
-                             .Produziere<MVVM.Utils.Anwendung>();
+                             .Produziere<Anwendung>();
 
             // Setze den BindingContext der gesammten Anwendung auf die eigene Infrastruktur
             Application.Current!.BindingContext = AnwendungApp;

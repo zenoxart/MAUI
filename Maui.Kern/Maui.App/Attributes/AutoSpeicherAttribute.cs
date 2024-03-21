@@ -7,36 +7,31 @@ using System.Threading.Tasks;
 
 namespace Maui.App.Attributes
 {
-    public class AutoSpeicherAttribute : Attribute
+    [AttributeUsage(AttributeTargets.All)]
+    public class AutoSpeicherAttribute(string schlüssel) : Attribute
     {
-        private readonly string _schlüssel;
+        private readonly string _schlüssel = schlüssel;
 
-        public AutoSpeicherAttribute(string schlüssel)
+        public object? GetValue(Type eigenschaftsTyp)
         {
-            _schlüssel = schlüssel;
+            string? serialisierterWert = SecureStorage.GetAsync(_schlüssel).Result;
 
-        }
-
-        public object GetValue(Type eigenschaftsTyp)
-        {
-            string serialisierterWert = SecureStorage.GetAsync(_schlüssel).Result;
-            return Deserialize(serialisierterWert, eigenschaftsTyp);
+            return serialisierterWert != null ? Deserialize(serialisierterWert, eigenschaftsTyp) : null;
         }
         public void SetValue(object value)
         {
-            string serialisierterWert = Serialize(value);
-            SecureStorage.SetAsync(_schlüssel, serialisierterWert);
+            string? serialisierterWert = Serialize(value);
+            if (serialisierterWert != null)
+                SecureStorage.SetAsync(_schlüssel, serialisierterWert);
         }
 
-        private string Serialize(object value)
-        {
-            // Implement serialization logic (e.g., using JSON serialization)
-            return value.ToString(); // Example: using ToString() for simplicity
-        }
+        private static string? Serialize(object value) =>
+            // TODO: Implement serialization logic (e.g., using JSON serialization)
+            value.ToString() ?? string.Empty; 
 
-        private object Deserialize(string serializedValue, Type propertyType)
+        private static object Deserialize(string serializedValue, Type propertyType)
         {
-            // Implement deserialization logic (e.g., using JSON deserialization)
+            // TODO: Implement deserialization logic (e.g., using JSON deserialization)
             if (propertyType == typeof(string))
             {
                 return serializedValue;

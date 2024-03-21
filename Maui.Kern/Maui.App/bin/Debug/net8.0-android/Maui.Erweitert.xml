@@ -280,6 +280,204 @@
             Wiederholt die Asyncrone Funktion wenn diese Fehlschlägt
             </summary>
         </member>
+        <member name="T:Maui.Erweitert.Datenstrukturverwaltung.HashMapManager">
+            <summary>
+            Stellt einen Dienst zum Verwalten und Handeln von HashMaps
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.HashMapManager.Sortieren``1(System.Collections.Generic.HashSet{``0})">
+            <summary>
+            Gibt eine geordnete HashMap/HashSet zurück
+            </summary>
+            <typeparam name="T">Der generische Typ des HashSet-Objektes</typeparam>
+            <param name="hashmap">Die rohe HashMap</param>
+            <returns>eine sortierte HashMap</returns>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.HashMapManager.SortierungUmdrehen``1(System.Collections.Generic.HashSet{``0})">
+            <summary>
+            Gibt eine sortierte-HashMap in umgedrehter Reihenfolge zurück
+            </summary>
+            <typeparam name="T">Der generische Typ des HashMap-Objektes</typeparam>
+            <param name="liste">Die rohe HashMap</param>
+            <returns>die umgedrehte sortierte HashMap</returns>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.HashMapManager.CheckDublikateZwischenSets``1(System.Collections.Generic.HashSet{``0},System.Collections.Generic.HashSet{``0})">
+            <summary>
+            Gibt eine HashMap mit allen Dublikaten 2 sets zurück
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="map1"></param>
+            <param name="map2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.HashMapManager.CheckAlleDublikate``1(System.Collections.Generic.List{System.Collections.Generic.HashSet{``0}})">
+            <summary>
+            Gibt eine HashMap zurück welche alle Dublikate der übergebenen Sammlung an HashMaps besitzt
+            </summary>
+            <typeparam name="T">Der generische Typ des HashMap-Objektes</typeparam>
+            <param name="hashmapcollections">Eine Auflistung an generischen HashMaps zum Vergleichen</param>
+            <returns>Die Schnittmenge aller HashMapObjekte der übergebenen hashmapcollections</returns>
+        </member>
+        <member name="T:Maui.Erweitert.Datenstrukturverwaltung.HashTableManager">
+            <summary>
+            Stellt einen Dienst zum Verwalten und Handeln von Hashtables
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.HashTableManager.SortierungUmdrehen(System.Collections.Hashtable)">
+            <summary>
+            Gibt eine sortierte-HashMap in umgedrehter Reihenfolge zurück
+            </summary>
+            <typeparam name="T">Der generische Typ des HashMap-Objektes</typeparam>
+            <param name="liste">Die rohe HashMap</param>
+            <returns>die umgedrehte sortierte HashMap</returns>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.HashTableManager.CheckDublikateZwischenSets(System.Collections.Hashtable,System.Collections.Hashtable)">
+            <summary>
+            Gibt eine HashMap mit allen Dublikaten von 2 sets zurück
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="map1"></param>
+            <param name="map2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.HashTableManager.BeinhaltetInHashtable(System.Collections.Hashtable,System.Object)">
+            <summary>
+            Gibt einen Wahrheitswert ob das Objekt in dem Hashtable vorhanden ist oder nicht
+            </summary>
+        </member>
+        <member name="T:Maui.Erweitert.Datenstrukturverwaltung.ISortierbaresObjekt">
+            <summary>
+            Gibt an das das Objekt eine Id (Indikator) besitzt, nachdem das Objekt geordnet werden kann
+            </summary>
+        </member>
+        <member name="T:Maui.Erweitert.Datenstrukturverwaltung.LinkedListManager">
+            <summary>
+            Stellt einen Dienst zum Verwalten und Handeln von Verknüpften Listen
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.LinkedListManager.Sortieren``1(System.Collections.Generic.LinkedList{``0})">
+            <summary>
+            Gibt eine geordnete Verknüfte Liste zurück
+            </summary>
+            <typeparam name="T">Der generische Typ der Listenobjekte</typeparam>
+            <param name="liste">Die rohe Liste</param>
+            <returns>eine sortierte Liste</returns>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.LinkedListManager.CheckDublikateZwischenListen``1(System.Collections.Generic.LinkedList{``0},System.Collections.Generic.LinkedList{``0})">
+            <summary>
+            Gibt eine LinkedList mit allen Dublikaten 2 sets zurück
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="linkedList1">Die erste LinkedList</param>
+            <param name="linkedList2">Die zu vergleichende LinkedList</param>
+            <returns>die Dublikate beider LinkedLists</returns>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.LinkedListManager.CheckAlleDublikate``1(System.Collections.Generic.List{System.Collections.Generic.LinkedList{``0}})">
+            <summary>
+            Gibt eine LinkedList zurück welche alle Dublikate der übergebenen Sammlung an LinkedLists besitzt
+            </summary>
+            <typeparam name="T">Der generische Typ des LinkedList-Objektes</typeparam>
+            <param name="linkedListcollections">Eine Auflistung an generischen LinkedList-Elementen zum Vergleichen</param>
+            <returns>Die Schnittmenge aller LinkedListobjekte der übergebenen Sammlung</returns>
+        </member>
+        <member name="T:Maui.Erweitert.Datenstrukturverwaltung.ObservableCollectionManager">
+            <summary>
+            Stellt eine Basis zum Ordnen, Umdrehen und Checken von Dublikaten in Bindbaren Sammlungen
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.ObservableCollectionManager.Sortieren``1(System.Collections.ObjectModel.ObservableCollection{``0})">
+            <summary>
+            Gibt eine geordnete Collection zurück
+            </summary>
+            <typeparam name="T">Der generische Typ der Collectionobjekte</typeparam>
+            <param name="liste">Die rohe Collection</param>
+            <returns>eine sortierte Collection</returns>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.ObservableCollectionManager.SortierungUmdrehen``1(System.Collections.ObjectModel.ObservableCollection{``0})">
+            <summary>
+            Gibt eine Collection in umgedrehter Reihenfolge zurück
+            </summary>
+            <typeparam name="T">Der generische Typ der Collectionobjekte</typeparam>
+            <param name="liste">Die rohe Collection</param>
+            <returns>die umgedrehte Collection</returns>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.ObservableCollectionManager.CheckDublikateZwischenCollections``1(System.Collections.ObjectModel.ObservableCollection{``0},System.Collections.ObjectModel.ObservableCollection{``0})">
+            <summary>
+            Gibt eine Collection mit allen Dublikaten 2 sets zurück
+            </summary>
+            <typeparam name="T">Der generische Typ der Collectionobjekte</typeparam>
+            <param name="collection1">Die erste Collection</param>
+            <param name="collection2">Die zu vergleichende Collection</param>
+            <returns>die Dublikate beider Collections</returns>
+        </member>
+        <member name="T:Maui.Erweitert.Datenstrukturverwaltung.QueueManager">
+            <summary>
+            Stellt einen Dienst zum Verwalten und Handeln von Queues
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.QueueManager.Sortieren``1(System.Collections.Generic.Queue{``0})">
+            <summary>
+            Gibt eine geordnete Queue zurück
+            </summary>
+            <typeparam name="T">Der generische Typ der Queueobjekte</typeparam>
+            <param name="liste">Die rohe Queue</param>
+            <returns>eine sortierte Quere</returns>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.QueueManager.CheckDublikateZwischenQueues``1(System.Collections.Generic.Queue{``0},System.Collections.Generic.Queue{``0})">
+            <summary>
+            Gibt eine Queue mit allen Dublikaten 2 sets zurück
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="queue1">Die erste Queue</param>
+            <param name="queue2">Die zu vergleichende Queue</param>
+            <returns>die Dublikate beider Queues</returns>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.QueueManager.CheckAlleDublikate``1(System.Collections.Generic.List{System.Collections.Generic.Queue{``0}})">
+            <summary>
+            Gibt eine Queue zurück welche alle Dublikate der übergebenen Sammlung an Queues besitzt
+            </summary>
+            <typeparam name="T">Der generische Typ des Queue-Objektes</typeparam>
+            <param name="queuecollections">Eine Auflistung an generischen Queue zum Vergleichen</param>
+            <returns>Die Schnittmenge aller Queueobjekte der übergebenen Sammlung</returns>
+        </member>
+        <member name="T:Maui.Erweitert.Datenstrukturverwaltung.StackManager">
+            <summary>
+            Stellt einen Dienst zum Verwalten und Handeln von Stacks
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.StackManager.Sortieren``1(System.Collections.Generic.Stack{``0})">
+            <summary>
+            Gibt eine geordnete Stack zurück
+            </summary>
+            <typeparam name="T">Der generische Typ der Stackobjekte</typeparam>
+            <param name="liste">Die rohe Stack</param>
+            <returns>eine sortierte Quere</returns>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.StackManager.SortierenUmdrehen``1(System.Collections.Generic.Stack{``0})">
+            <summary>
+            Gibt eine Stack in umgedrehter Reihenfolge zurück
+            </summary>
+            <typeparam name="T">Der generische Typ der Stackobjekte</typeparam>
+            <param name="liste">Die rohe Stack</param>
+            <returns>die umgedrehte Stack</returns>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.StackManager.CheckDublikateZwischenStacks``1(System.Collections.Generic.Stack{``0},System.Collections.Generic.Stack{``0})">
+            <summary>
+            Gibt eine Stack mit allen Dublikaten 2 sets zurück
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="stack1">Die erste Stack</param>
+            <param name="stack2">Die zu vergleichende Stack</param>
+            <returns>die Dublikate beider Stacks</returns>
+        </member>
+        <member name="M:Maui.Erweitert.Datenstrukturverwaltung.StackManager.CheckAlleDublikate``1(System.Collections.Generic.List{System.Collections.Generic.Stack{``0}})">
+            <summary>
+            Gibt eine Stack zurück welche alle Dublikate der übergebenen Sammlung an Stacks besitzt
+            </summary>
+            <typeparam name="T">Der generische Typ des Stack-Objektes</typeparam>
+            <param name="stackcollections">Eine Auflistung an generischen Stack zum Vergleichen</param>
+            <returns>Die Schnittmenge aller Stackobjekte der übergebenen Sammlung</returns>
+        </member>
         <member name="T:Maui.Erweitert.Manager.ProtokollManager">
             <summary>
             Stellt einen Dienst zum Verwalten
@@ -472,6 +670,172 @@
             Ruft den ConnectionString ab, der
             zum Verbinden zur Sql Server Datenbank benutzt wird
             </summary>
+        </member>
+        <member name="T:Maui.Erweitert.Udp.ClientInfo">
+            <summary>
+            Stellt eine Datenstruktur welche User Datagram Protocol-wichtige Clientinformationen beinhaltet
+            </summary>
+        </member>
+        <member name="T:Maui.Erweitert.Udp.Data">
+            <summary>
+            Stellt eine Datenstruktur für ein User Datagram Protocol-Protokoll
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Udp.Data.#ctor(System.Byte[])">
+            <summary>
+            Erstellt ein Objekt aus dem UDP-Byte-Stream
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="P:Maui.Erweitert.Udp.Data.RaumNummer">
+            <summary>
+            Ruft die Raumnummer ab oder legt diese fest
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Udp.Data.ClientName">
+            <summary>
+            Ruft den Cliennamen ab oder legt diesen fest
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Udp.Data.ClientNachricht">
+            <summary>
+            Ruft die Nachricht eines Clients ab oder legt diese fest
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Udp.Data.BefehlTyp">
+            <summary>
+            Ruft die Befehlsart ab oder legt diese fest
+            </summary>
+        </member>
+        <member name="T:Maui.Erweitert.Udp.UdpBefehle">
+            <summary>
+            Stellt eine Auflistung an User Datagram Protocol-Protokoll-Befehlen
+            </summary>
+        </member>
+        <member name="T:Maui.Erweitert.Udp.UdpClient">
+            <summary>
+            Stellt einen Client zum Verwalten von User Datagram Protocol-Verbindungen
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Udp.UdpClient._ServerSocket">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Udp.UdpClient.ServerSocket">
+            <summary>
+            Ruft den Web-Socket für UDP-Request und Responses ab oder legt diesen fest
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Udp.UdpClient._EndPunktServer">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Udp.UdpClient.VerbindeZuServer">
+            <summary>
+            Verbindet den Client mit dem Ziel-UDP-Server
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Udp.UdpClient.OnSend(System.IAsyncResult)">
+            <summary>
+            Sendet Daten über einen Asyncronen Callback zum UDP-Server
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Udp.UdpClient._ZielServerAdresse">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Udp.UdpClient.ZielServerAdresse">
+            <summary>
+            Ruft die ZielAdresse des Servers ab oder legt diese fest
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Udp.UdpClient._UdpServerPort">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+            <remarks>
+            Standart-Port für den UDP-Server ist 1000
+            </remarks>
+        </member>
+        <member name="P:Maui.Erweitert.Udp.UdpClient.UdpServerPort">
+            <summary>
+            Ruft den Port mit dem der UDP-Server/Client kommuniziert ab oder legt diesen fest
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Udp.UdpClient._BenutzerName">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Udp.UdpClient.BenutzerName">
+            <summary>
+            Ruft den Namen des Benutzers ab oder legt diesen fest
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Udp.UdpRaum._RaumNummer">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Udp.UdpRaum.RaumNummer">
+            <summary>
+            Ruft die Raumnummer ab oder legt diese fest
+            </summary>
+        </member>
+        <member name="T:Maui.Erweitert.Udp.UdpServer">
+            <summary>
+            Stellt einen User Datagram Protocol - Server zum Verwalten von Anfragen
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Maui.Erweitert.Udp.UdpServer._ClientInformationen" -->
+        <member name="P:Maui.Erweitert.Udp.UdpServer.ClientInformationen">
+            <summary>
+            Ruft die Informationen zu den Clients ab oder legt diese fest
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Udp.UdpServer._ChatRäume">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Udp.UdpServer.ChatRäume">
+            <summary>
+            Ruft eine Auflistung an Clients ab oder legt diese fest
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Udp.UdpServer._ServerSocket">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Udp.UdpServer.ServerSocket">
+            <summary>
+            Ruft den Socket mit dem der Server kommuniziert ab oder legt diesen fest
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Udp.UdpServer._ByteData">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Udp.UdpServer.ByteData">
+            <summary>
+            Ruft die Daten ab oder legt diese fest
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Udp.UdpServer.OnReceive(System.IAsyncResult)">
+            <summary>
+            Stellt ein Event zum Erhalten von Protokollen
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Udp.UdpServer.OnSend(System.IAsyncResult)">
+            <summary>
+            Definiert die Aktion wärend des Sendens
+            </summary>
+            <param name="ar"></param>
         </member>
         <member name="T:Maui.Erweitert.ViewModelAppKontext">
             <summary>

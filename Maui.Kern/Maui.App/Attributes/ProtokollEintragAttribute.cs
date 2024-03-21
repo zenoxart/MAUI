@@ -1,4 +1,4 @@
-﻿using Maui.App.MVVM.Utils;
+﻿using Maui.App.Infrastuktur;
 
 namespace Maui.App.Attributes
 {
