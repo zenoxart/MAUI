@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			x:Class="Maui.App.MVVM.View.Tabellen.Benutzerverwaltung"
+			Title="Benutzerverwaltung"
+			xmlns:converters="clr-namespace:Maui.App.MVVM.Utils"
+			 
+			 >
+
+	<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20" Spacing="10">
+		<StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="5">
+
+			<Button 
+				Text="q" 
+				FontFamily="Webdings" 
+				MinimumWidthRequest="40" 
+				Command="{Binding AppKontext.BenutzerManager.LadeBenutzerListeCommand}"
+				SemanticProperties.Hint="Aktuallisieren"
+				SemanticProperties.Description="Aktuallisiert die Benutzerliste der Anwendung"/>
+			
+			<Button 
+				Text="i" 
+				FontFamily="Webdings" 
+				MinimumWidthRequest="40" 
+				Command="{Binding AppKontext.BenutzerManager.LadeBenutzerListeCommand}"
+				SemanticProperties.Hint="Benutzerinformationen"
+				SemanticProperties.Description="Liefert die Benutzerinformationen des ausgewählten Benutzers"/>
+			<Button 
+				Text="x" 
+				FontFamily="Webdings" 
+				MinimumWidthRequest="40" 
+				Command="{Binding AppKontext.BenutzerManager.LadeBenutzerListeCommand}"
+				SemanticProperties.Hint="Benutzer Blockieren"
+				SemanticProperties.Description="Blockiert den ausgewählten Benutzer von der Anwendung"/>
+			<Button 
+				Text="a" 
+				FontFamily="Webdings" 
+				MinimumWidthRequest="40" 
+				Command="{Binding AppKontext.BenutzerManager.LadeBenutzerListeCommand}"
+				SemanticProperties.Hint="Benutzerinformationen"
+				SemanticProperties.Description="Liefert die Benutzerinformationen des ausgewählten Benutzers"/>
+		</StackLayout>
+		<ListView 
+				 x:Name="listView"
+				ItemsSource="{Binding AppKontext.BenutzerManager.BenutzerSammlung}"
+				SelectedItem="{Binding AppKontext.BenutzerManager.BenutzerAktuell}"
+				VerticalOptions="FillAndExpand">
+			<ListView.Header >
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+					</Grid.ColumnDefinitions>
+					<Label Text="Id"  Grid.Column="0" />
+					<Label Text="Benutzername"  Grid.Column="1" />
+					<Label Text="Vorname"  Grid.Column="2"/>
+					<Label Text="Nachname"  Grid.Column="3" />
+				</Grid>
+			</ListView.Header>
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="*" />
+								<ColumnDefinition Width="*" />
+								<ColumnDefinition Width="*" />
+								<ColumnDefinition Width="*" />
+							</Grid.ColumnDefinitions>
+							<Label Text="{Binding Id}" Grid.Column="0" />
+							<Label Text="{Binding Benutzername}" Grid.Column="1" />
+							<Label Text="{Binding Vorname}" Grid.Column="2" />
+							<Label Text="{Binding Nachname}" Grid.Column="3" />
+						</Grid>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</StackLayout>
+
+</ContentPage>

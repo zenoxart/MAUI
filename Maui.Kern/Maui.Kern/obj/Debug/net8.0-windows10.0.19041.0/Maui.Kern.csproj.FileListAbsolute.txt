@@ -1,0 +1,17 @@
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\bin\Debug\net8.0-windows10.0.19041.0\Maui.Kern.deps.json
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\bin\Debug\net8.0-windows10.0.19041.0\Maui.Kern.dll
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\bin\Debug\net8.0-windows10.0.19041.0\Maui.Kern.pdb
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\bin\Debug\net8.0-windows10.0.19041.0\de\Maui.Kern.resources.dll
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\obj\Debug\net8.0-windows10.0.19041.0\Maui.Kern.csproj.AssemblyReference.cache
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\obj\Debug\net8.0-windows10.0.19041.0\Maui.Kern.Properties.Resources.resources
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\obj\Debug\net8.0-windows10.0.19041.0\Maui.Kern.Properties.Resources.de.resources
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\obj\Debug\net8.0-windows10.0.19041.0\Maui.Kern.csproj.GenerateResource.cache
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\obj\Debug\net8.0-windows10.0.19041.0\Maui.Kern.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\obj\Debug\net8.0-windows10.0.19041.0\Maui.Kern.AssemblyInfoInputs.cache
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\obj\Debug\net8.0-windows10.0.19041.0\Maui.Kern.AssemblyInfo.cs
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\obj\Debug\net8.0-windows10.0.19041.0\Maui.Kern.csproj.CoreCompileInputs.cache
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\obj\Debug\net8.0-windows10.0.19041.0\de\Maui.Kern.resources.dll
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\obj\Debug\net8.0-windows10.0.19041.0\Maui.Kern.dll
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\obj\Debug\net8.0-windows10.0.19041.0\refint\Maui.Kern.dll
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\obj\Debug\net8.0-windows10.0.19041.0\Maui.Kern.pdb
+C:\Users\U731233\source\repos\Maui.Kern\Maui.Kern\obj\Debug\net8.0-windows10.0.19041.0\ref\Maui.Kern.dll

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui.App.MVVM.Controls.LoginControl">
+	<Grid Margin="20" MaximumWidthRequest="300">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+
+		<Label
+			Grid.Row="0"
+			Grid.Column="0"
+			Text="Username"
+			HorizontalOptions="Center"
+			VerticalOptions="Center"
+		/>
+
+		<Entry
+			Grid.Row="0"
+			Grid.Column="1"
+			Text="!Username"
+			SemanticProperties.Description="Field for the Name of the Account"
+		/>
+
+
+		<Label
+			Grid.Row="1"
+			Grid.Column="0"
+			Text="Password"
+			HorizontalOptions="Center"
+			VerticalOptions="Center"
+		/>
+
+
+		<Entry
+			Grid.Row="1"
+			Grid.Column="1"
+			Text="!Password"
+			IsPassword="True"
+			SemanticProperties.Description="Field for the Secure-Keyword of the Account"
+			SemanticProperties.Hint="Use a long and cryptic password for higher security!"
+		/>
+
+
+		<CheckBox
+			Grid.Row="2"
+			Grid.Column="0"
+			HorizontalOptions="End"
+		/>
+
+
+		<Label
+			Grid.Row="2"
+			Grid.Column="1"
+			Text="Stay Logged in"
+			HorizontalOptions="Start"
+			VerticalOptions="Center"
+		/>
+
+		<Button
+			Grid.Row="3"
+			Grid.ColumnSpan="2"
+			Text="Login"
+			SemanticProperties.Hint="Connects you into the App"
+		/>
+
+		<Button
+			Grid.Row="4"
+			Grid.Column="1"
+			Background="Transparent"
+			TextColor="DarkBlue"
+			FontAttributes="Bold"
+			Text="Create Account"
+			SemanticProperties.Description="Create an Account if you are a new User"
+		/>
+
+
+	</Grid>
+</ContentView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui.App.MVVM.View.SettingsPage"
+             Title="{Binding Sprachen.AkutelleUILokalisierung[SettingsTitel], Mode=OneWay}"
+			 IconImageSource="settings.png"
+			 >
+	
+	<VerticalStackLayout VerticalOptions="Start" >
+		<Label 
+            Text="{Binding Sprachen.AkutelleUILokalisierung[SettingsText1], Mode=OneWay}"/>
+		
+		<StackLayout >
+			<Label Text="{Binding Sprachen.AkutelleUILokalisierung[SettingsSprachenText], Mode=OneWay}" />
+			<Picker
+					ItemsSource="{Binding Sprachen.Sprachenliste}"
+					ItemDisplayBinding="{Binding Name}"
+					SelectedItem="{Binding Sprachen.AktuelleSprache}"
+	
+					/>
+		</StackLayout>
+
+		<Label Text="Hello World"/>
+
+
+	</VerticalStackLayout>
+</ContentPage>

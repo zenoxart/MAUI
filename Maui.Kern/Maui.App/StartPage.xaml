@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui.App.StartPage"
+			 xmlns:lang="clr-namespace:Maui.App.Properties"
+			 >
+
+	<ScrollView>
+		<VerticalStackLayout
+			VerticalOptions="Center"
+            Spacing="15">
+
+
+			<Label
+                Text="{Binding Sprachen.AkutelleUILokalisierung[AppTitel], Mode=OneWay}"
+                Style="{StaticResource Headline}"
+		        FontAttributes="Bold"/>
+
+
+			<Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit" />
+
+			
+			<Label
+                Text="{Binding Sprachen.AkutelleUILokalisierung[StartPageDescription], Mode=OneWay}"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"/>
+
+
+			<Button
+                Text="{Binding StartBtnText}"
+                SemanticProperties.Hint="{Binding Sprachen.AkutelleUILokalisierung[StartBtnHint], Mode=OneWay}"
+				Command="{Binding LoginOrTabbedViewCommand}" />
+		</VerticalStackLayout>
+	</ScrollView>
+
+</ContentPage>

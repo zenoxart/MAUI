@@ -1,0 +1,587 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Maui.Erweitert</name>
+    </assembly>
+    <members>
+        <member name="T:Maui.Erweitert.Daten.InToStringAttribute">
+            <summary>
+            Kennzeichnet Eigenschaften von
+            Datenbasis Objekten, deren Inhalt
+            im ToString() Ergebnis angezeigt 
+            werden soll
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Daten.InToStringAttribute._Index">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Daten.InToStringAttribute.Index">
+            <summary>
+            Ruft die Position der
+            Eigenschaft im ToString Ergebnis ab
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Daten.InToStringAttribute.#ctor">
+            <summary>
+            Initialisiert ein neues InToStringAttribute Objekt
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Daten.InToStringAttribute.#ctor(System.Int32)">
+            <summary>
+            Initialisiert ein neues InToStringAttribute Objekt
+            </summary>
+            <param name="index">Gibt die Position
+            der Eigenschaft im ToString() Ergebnis an</param>
+        </member>
+        <member name="T:Maui.Erweitert.Daten.DatenBasis">
+            <summary>
+            Stellt die Grundlage für ein
+            Anwendungs Datentransferobjekt bereit
+            </summary>
+            <remarks>Objekte basierend auf der DatenBasis
+            können für die MAUI Datenbindung benutzt werden</remarks>
+        </member>
+        <member name="E:Maui.Erweitert.Daten.DatenBasis.PropertyChanged">
+            <summary>
+            Wird ausgelöst, wenn sich der Inhalt
+            einer Eigenschaft ändert
+            </summary>
+            <remarks>Wird von Maui benötigt, damit
+            die Oberfläche automatisch aktualisiert wird.
+            Maui prüft das Interface INotifyPropertyChanged</remarks>
+        </member>
+        <member name="M:Maui.Erweitert.Daten.DatenBasis.OnPropertyChanged(System.String)">
+            <summary>
+            Löst das Ereignis PropertyChanged aus
+            </summary>
+            <param name="eigenschaft">Der Name der Eigenschaft,
+            deren Wert geändert wurde</param>
+            <remarks>Sollte der Name der Eigenschaft nicht angegeben
+            werden, wird der Name vom Aufrufer benutzt</remarks>
+        </member>
+        <member name="T:Maui.Erweitert.Daten.DatenBasis.InToStringEigenschaftBeschreibung">
+            <summary>
+            Stellt Information über eine Eigenschaft
+            bereit, deren Wert im ToString() aufgelistet 
+            werden soll
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Daten.DatenBasis.InToStringEigenschaftBeschreibung.Index">
+            <summary>
+            Ruft die Position dieser Eigenschaft
+            im ToString Ergebnis ab oder legt
+            diese fest.
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Daten.DatenBasis.InToStringEigenschaftBeschreibung.Eigenschaft">
+            <summary>
+            Ruft die .Net Beschreibung der
+            Eigenschaft ab oder legt diese fest.
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Daten.DatenBasis.InToStringEigenschaftBeschreibung.ToString">
+            <summary>
+            Gibt einen Text zurück, der
+            die gekapselte .Net Eigenschaft beschreibt
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Daten.DatenBasis.InToStringEigenschaftBeschreibung._Ausgabemuster">
+            <summary>
+            Internes Feld für das Ausgabeformat
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Daten.DatenBasis.InToStringEigenschaftBeschreibung.Ausgabemuster">
+            <summary>
+            Ruft den Namen der Eigenschaft
+            mit einem Parameter für den
+            aktuellen Wert ab
+            </summary>
+            <remarks>Es wird automatisch
+            ein Komma und Leerzeichen angehängt</remarks>
+        </member>
+        <member name="F:Maui.Erweitert.Daten.DatenBasis.InToStringEigenschaftBeschreibung._AusgabemusterWennNull">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Daten.DatenBasis.InToStringEigenschaftBeschreibung.AusgabemusterWennNull">
+            <summary>
+            Ruft den Namen der Eigenschaft
+            mit der Einstellung Null ab,
+            wenn kein aktueller Wert vorhanden ist
+            </summary>
+            <remarks>Es wird automatisch ein
+            Komma und Leerzeichen angehängt</remarks>
+        </member>
+        <member name="T:Maui.Erweitert.Daten.DatenBasis.InToStringEigenschafBeschreibungen">
+            <summary>
+            Stellt eine typsichere Auflistung von
+            InToStringEigenschaftBeschreibung Objekten bereit
+            </summary>
+        </member>
+        <member name="T:Maui.Erweitert.Daten.DatenBasis.InToStringEigenschaftBeschreibungenWörterbuch">
+            <summary>
+            Stellt eine typsichere Hashtable zum
+            Sammeln der InToStringEigenschaftBeschreibungen
+            je Typ bereit.
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Daten.DatenBasis._InToStringCache">
+            <summary>
+            Internes Hashtable Feld zum Sammeln
+            der bereits analysierten Typen
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Daten.DatenBasis.InToStringCache">
+            <summary>
+            Ruft das Wörterbuch zum Sammeln
+            der Typen mit InToStringAttribute 
+            Eigenschaften ab
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Daten.DatenBasis.ToString">
+            <summary>
+            Gibt einen Text zurück, der
+            das aktuelle Objekt beschreibt.
+            </summary>
+            <remarks>Das Ergebnis kann
+            mit dem InToStringAttribute 
+            gesteuert werden</remarks>
+        </member>
+        <member name="E:Maui.Erweitert.Daten.DatenBasis.NeuerTypWurdeAnalysiert">
+            <summary>
+            Wird ausgelöst, wenn ToString() einen neuen Typ 
+            zum Finden der Eigenschaften mit InToStringAttribute
+            analysiert hat
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Daten.DatenBasis.OnNeuerTypWurdeAnalysiert(System.Type)">
+            <summary>
+            Löst das Ereignis NeuerTypWurdeAnalysiert aus
+            </summary>
+            <param name="typ">Die Beschreibung des Typs,
+            der für ToString() analysiert wurde</param>
+        </member>
+        <member name="T:Maui.Erweitert.Daten.ProtokollEintragTyp">
+            <summary>
+            Beschreibt die Art eines Protokolleintrags
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Daten.ProtokollEintragTyp.NeueInstanz">
+            <summary>
+            Beschreibt, dass ein neues Objekt initialisiert wurde
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Daten.ProtokollEintragTyp.Normal">
+            <summary>
+            Beschreibt einen Hinweis
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Daten.ProtokollEintragTyp.Warnung">
+            <summary>
+            Kennzeichnet einen Hinweis, der zu beachten ist
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Daten.ProtokollEintragTyp.Fehler">
+            <summary>
+            Kennzeichnet einen Eintrag wegen einer Ausnahme
+            </summary>
+        </member>
+        <member name="T:Maui.Erweitert.Daten.ProtokollEinträge">
+            <summary>
+            Stellt eine typsichere Auflistung von
+            Protokolleinträgen bereit, die für die
+            MAUI Datenbindung benutzt werden kann
+            </summary>
+        </member>
+        <member name="T:Maui.Erweitert.Daten.ProtokollEintrag">
+            <summary>
+            Stellt die Daten eines
+            Protolleintrags bereit
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Daten.ProtokollEintrag.Zeitstempel">
+            <summary>
+            Ruft den Zeitpunkt des Erstellens
+            ab oder legt diese fest
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Daten.ProtokollEintrag.Typ">
+            <summary>
+            Ruft die Art des Eintrags ab,
+            oder legt diese fest
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Daten.ProtokollEintrag.Text">
+            <summary>
+            Ruft die Information von diesem Eintrag
+            ab oder legt diese fest
+            </summary>
+        </member>
+        <member name="T:Maui.Erweitert.Daten.SchwacherMethodenVerweis">
+            <summary>
+            Ermöglicht das Kapseln einer Methode
+            ohne den Garbage Collector an der 
+            Freigabe des Besitzers zu hindern
+            </summary>
+            <remarks>
+            Initialisiert ein SchwacherMethodenVerweis Objekt
+            </remarks>
+            <param name="methode">Speicheradresse der Methode,
+            die als WeakReference gekapselt werden soll,
+            damit der Garbage Collector nicht am Freigeben 
+            des Besitzers gehindert wird</param>
+        </member>
+        <member name="M:Maui.Erweitert.Daten.SchwacherMethodenVerweis.#ctor(System.Action)">
+            <summary>
+            Ermöglicht das Kapseln einer Methode
+            ohne den Garbage Collector an der 
+            Freigabe des Besitzers zu hindern
+            </summary>
+            <remarks>
+            Initialisiert ein SchwacherMethodenVerweis Objekt
+            </remarks>
+            <param name="methode">Speicheradresse der Methode,
+            die als WeakReference gekapselt werden soll,
+            damit der Garbage Collector nicht am Freigeben 
+            des Besitzers gehindert wird</param>
+        </member>
+        <member name="F:Maui.Erweitert.Daten.SchwacherMethodenVerweis._Methode">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Daten.SchwacherMethodenVerweis.Methode">
+            <summary>
+            Ruft die gekapselte Methode ab
+            </summary><remarks>
+            Null, falls der Besitzer nicht mehr existiert</remarks>
+        </member>
+        <member name="T:Maui.Erweitert.Daten.SchwacherMethodenVerweisListe">
+            <summary>
+            Stellt eine Auflistung von 
+            SchwacherMethodenVerweis Objekten bereit
+            </summary>
+        </member>
+        <member name="T:Maui.Erweitert.Komponenten.TaskUtility">
+            <summary>
+            Eine Unterstützung zur Verwaltung von Asyncronen Aufrufen
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Komponenten.TaskUtility.AusführenMitWiederholungAsync(System.Func{System.Threading.Tasks.Task},System.Int32,System.TimeSpan)">
+            <summary>
+            Wiederholt die Asyncrone Funktion wenn diese Fehlschlägt
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Komponenten.TaskUtility.AusführenMitWiederholungAsync``1(System.Func{System.Threading.Tasks.Task{``0}},System.Int32,System.TimeSpan)">
+            <summary>
+            Wiederholt die Asyncrone Funktion wenn diese Fehlschlägt
+            </summary>
+        </member>
+        <member name="T:Maui.Erweitert.Manager.ProtokollManager">
+            <summary>
+            Stellt einen Dienst zum Verwalten
+            des Anwendungsprotokolls bereit
+            </summary>
+            <remarks>
+            In MAUI - Anwendungen wird für die Threadsicherheit garantiert,
+            wenn die Dispatcher Eigenschaft auf den 
+            Anwendungsdispatcher festgelegt wird.
+            Sonst ist die Threadsicherheit nicht
+            gewährleistet.</remarks>
+        </member>
+        <member name="F:Maui.Erweitert.Manager.ProtokollManager.VersuchAnzahl">
+            <summary>
+            Definiert die Anzahl an Versuchen
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Manager.ProtokollManager._Einträge">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Manager.ProtokollManager.Einträge">
+            <summary>
+            Ruft die Liste mit den Einträgen ab
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Manager.ProtokollManager.Eintragen(Maui.Erweitert.Daten.ProtokollEintrag)">
+            <summary>
+            Fügt dem Protokoll einen neuen Eintrag hinzu
+            </summary>
+            <param name="eintrag">Protokolleintrag, der
+            am Ende angehängt werden soll</param>
+            <remarks>Für die Threadsicherheit wird für MAUI garantiert, 
+            wenn ein Dispatcher vorhanden ist, sonst ist die 
+            Threadsicherheit nicht gewährleistet.</remarks>
+        </member>
+        <member name="M:Maui.Erweitert.Manager.ProtokollManager.Eintragen(System.String)">
+            <summary>
+            Fügt dem Protokoll einen normalen Eintrag hinzu
+            </summary>
+            <param name="text">Information, die als normaler
+            Protokolleintrag am Ende angehängt werden soll</param>
+        </member>
+        <member name="M:Maui.Erweitert.Manager.ProtokollManager.Eintragen(System.String,Maui.Erweitert.Daten.ProtokollEintragTyp)">
+            <summary>
+            Fügt dem Protokoll einen gewünschten Eintrag hinzu
+            </summary>
+            <param name="text">Information, die als 
+            Protokolleintrag am Ende angehängt werden soll</param>
+            <param name="typ">Die Art vom Eintrag</param>
+        </member>
+        <member name="F:Maui.Erweitert.Manager.ProtokollManager._EnthältFehler">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Manager.ProtokollManager.EnthältFehler">
+            <summary>
+            Ruft einen Wahrheitwert ab oder legt diesen fest,
+            der angibt ob Fehlereinträge im Protokoll sind
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Manager.ProtokollManager.Dispatcher">
+            <summary>
+            Ruft den Verweis auf den MAUI Threadverteiler
+            ab oder legt diesen fest
+            </summary>
+            <remarks>
+            Falls ein Dispatcher eingestellt wird,
+            ist das Eintragen von Protokolleinträgen
+            für MAUI threadsicher</remarks>
+        </member>
+        <member name="F:Maui.Erweitert.Manager.ProtokollManager._Rückrufe">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Manager.ProtokollManager.Rückrufe">
+            <summary>
+            Ruft die Liste mit den Methoden ab,
+            die der ProtokollManager ausführen soll,
+            wenn ein neuer Eintrag erstellt wurde
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Manager.ProtokollManager.RückrufBuchen(System.Action)">
+            <summary>
+            Hinterlegt die gewünschte Rückrufmethode und 
+            ruft diese auf, wenn ein neuer Protokolleintrag erstellt wird
+            </summary>
+            <param name="rückrufMethode">Verweis auf die Methode,
+            die aufgerufen werden soll, wenn ein neuer
+            Protokolleintrag erstllt wurde </param>
+            <remarks>
+            Die Methode wird als WeakReference 
+            hinterlegtm danut der Garbage Collector
+            nicht am Entfernen vom Abonnenten gehindert wird</remarks>
+        </member>
+        <member name="M:Maui.Erweitert.Manager.ProtokollManager.RückrufStornieren(System.Action)">
+            <summary>
+            Storniert die gewünschte Rückrufmethode
+            </summary>
+            <param name="rückrufMethode">Verweis auf die Methode,
+            die storniert werden soll</param>
+        </member>
+        <member name="F:Maui.Erweitert.Manager.ProtokollManager._EnthältFehlerBlinken">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Manager.ProtokollManager.EnthältFehlerBlinken">
+            <summary>
+            Ruft ab true (800ms) und false (200ms),
+            wenn HatFehler true ist
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Manager.ProtokollManager.EnthältFehlerBlinkenLäuft">
+            <summary>
+            Internes Feld für den Status der Blinkenden LED
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Manager.ProtokollManager.EnthältFehlerBlinkenAsync">
+            <summary>
+            Schaltet die Eigenschaft EnthältFehlerBlinkend
+            800 ms auf True und 200 ms auf False,
+            wenn im Protokoll Fehlereinträge vorhanden sind
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Manager.ProtokollManager.Zählzeit">
+            <summary>
+            Internes Feld für das Setzten des Komprimierungsintervals
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Manager.ProtokollManager.StarteZähler">
+            <summary>
+            Starten einen Zähler, welches im Inveral von n Minuten die funktion Komprimieren auslöst
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Manager.ProtokollManager.Komprimieren(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            Versucht die Protokolleinträge zu komprimieren
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Manager.ProtokollManager.KomrpimierenAsync">
+            <summary>
+            Entfernt die ProtokollEinträge welche älter als die Zählzeit 
+            sind aus den Einträgen mit Ausnahme der Fehlermeldungen
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.Manager.ProtokollManager.SetAutomatischKomprimieren(System.Boolean)">
+            <summary>
+            Ob das Protokoll 
+            im Interval Komprimiert wird, 
+            oder setzt dieses
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.Manager.ProtokollManager._Pfad">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.Manager.ProtokollManager.Pfad">
+            <summary>
+            Ruft den Pfad für die APS.NET Konfiguration ab,
+            oder legt diese fest
+            </summary>
+            <remarks> Wird die Eigenschaft leer gelassen, wird kein Protokoll geschrieben</remarks>
+        </member>
+        <member name="M:Maui.Erweitert.Manager.ProtokollManager.EintragSpeichern(Maui.Erweitert.Daten.ProtokollEintrag)">
+            <summary>
+            Speichert die Daten des Protokolleintrags
+            in der im Pfad angegebenen Datei
+            </summary>
+            <param name="eintrag">der in die .Log-Datei zu speichernde 
+            Protokolleintrag</param>
+            <remarks>Sollte beim Schreiben ein Fehler auftreten, 
+            wird gewartet und wieder probiert und max. 10 mal wieder probiert,
+            sollte das Problem nicht lösen, wird der Pfad entfernt 
+            und damit das Speichern automatisch deaktiviert
+            Fehler können auftreten, wenn meherere Zugriffe gleichzeitig sind und die Datei gesperrt ist</remarks>
+        </member>
+        <member name="T:Maui.Erweitert.SqlClient.Controller">
+            <summary>
+            Stellt die Grundlage [Basisklasse] für eine Klasse bereit,
+            die Daten von einem Sql Server liest bzw. schreibt.
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.SqlClient.Controller.ConnectionString">
+            <summary>
+            Ruft den ConnectionString ab, der
+            zum Verbinden zur Sql Server Datenbank benutzt wird
+            </summary>
+        </member>
+        <member name="T:Maui.Erweitert.ViewModelAppKontext">
+            <summary>
+            Erweitert die Infrastruktur um
+            Dienste für Datenbank Anwendungen
+            </summary>
+        </member>
+        <member name="F:Maui.Erweitert.ViewModelAppKontext._Protokoll">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.ViewModelAppKontext.Protokoll">
+            <summary>
+            Ruft das Anwendungsprotokoll ab
+            </summary>
+        </member>
+        <member name="M:Maui.Erweitert.ViewModelAppKontext.Produziere``1">
+            <summary>
+            Gibt ein initialisiertes Anwendungsobjekt zurück
+            </summary>
+            <typeparam name="T">Gibt den Typ des benötigten Anwendungsobjekts an</typeparam>
+            <returns>Ein Objekt, bei dem die AppKontext Eigenschaft eingestellt ist</returns>
+            <remarks>Im Anwendungsprotokoll wird automatisch
+            ein Eintrag erstellt, dass eine neue Instanz initialisiert wurde</remarks>
+        </member>
+        <member name="F:Maui.Erweitert.ViewModelAppKontext._Cache">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.ViewModelAppKontext.Cache">
+            <summary>
+            Ruft den Cache der Anwendung ab
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.ViewModelAppKontext.EnthältFehler">
+            <summary>
+            Ruft einen Warheitswert ab ob ein Fehler enthalten ist 
+            oder legt fest
+            </summary>
+        </member>
+        <member name="T:Maui.Erweitert.ViewModelAppObjekt">
+            <summary>
+            Stellt die Grundlage für ViewModels
+            bereit und untersützt diese mit der Infrastruktur
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.ViewModelAppObjekt.AppKontext">
+            <summary>
+            Ruft die erweiterte Infrastruktur
+            ab oder legt diese fest
+            </summary>
+            <remarks>Als Feld wird der AppKontext
+            der Basisklasse benutzt. Durch diese
+            Eigenschaft erspart man sich das
+            spätere ständige Casten.</remarks>
+        </member>
+        <member name="F:Maui.Erweitert.ViewModelAppObjekt._IstBeschäftigtZähler">
+            <summary>
+            Internes Hilfsfeld für die
+            IstBeschäftigt Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Maui.Erweitert.ViewModelAppObjekt.IstBeschäftigt">
+            <summary>
+            Ruft einen Wahrheitswert ab,
+            der angibt, ob die Anwendung
+            aktuelle Berechnungen durchführt
+            oder anderweitig beschäftigt ist
+            </summary>
+            <remarks>Der Inhalt der Eigenschaft
+            wird mit StartProtokollieren und
+            EndeProtokollieren gesetzt</remarks><remarks>
+            Mit der IstBeschäftigtSynchronisieren Methode 
+            kann ein anderes ViewModel informiert werden.</remarks>
+        </member>
+        <member name="M:Maui.Erweitert.ViewModelAppObjekt.StartProtokollieren(System.String)">
+            <summary>
+            Schaltet IstBeschäftigt ein und erstellt
+            einen Protokolleintrag, dass die Methode
+            zu laufen beginnt
+            </summary>
+            <param name="methodenName">Name der Methode,
+            deren Start protokolliert werden soll</param>
+            <remarks>Sollte der Methodenname nicht angegeben
+            sein, wird automatisch der Name der 
+            aufrufenden Methode benutzt</remarks>
+        </member>
+        <member name="M:Maui.Erweitert.ViewModelAppObjekt.EndeProtokollieren(System.String)">
+            <summary>
+            Schaltet IstBeschäftigt aus und erstellt
+            einen Protokolleintrag, dass die Methode
+            beendet ist
+            </summary>
+            <param name="methodenName">Name der Methode,
+            deren Ende protokolliert werden soll</param>
+            <remarks>Sollte der Methodenname nicht angegeben
+            sein, wird automatisch der Name der 
+            aufrufenden Methode benutzt</remarks>
+        </member>
+        <member name="M:Maui.Erweitert.ViewModelAppObjekt.IstBeschäftigtSynchronisieren(Maui.Erweitert.ViewModelAppObjekt)">
+            <summary>
+            Stellt sicher, dass eine Änderung
+            von IstBeschäftigt auch in dem anderen
+            ViewModel geändert wird
+            </summary>
+            <param name="mitViewModel">ViewModel, wo die 
+            IstBeschäftigt Einstellung ebenfalls sichtbar
+            sein soll</param>
+        </member>
+    </members>
+</doc>

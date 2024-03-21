@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\U731233\\source\\repos\\Maui.Kern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4145690D-A840-4C5D-82CA-DDED283BEB53}|Maui.Kern\\Maui.Kern.csproj|c:\\users\\u731233\\source\\repos\\maui.kern\\maui.kern\\generisch\\jsoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4145690D-A840-4C5D-82CA-DDED283BEB53}|Maui.Kern\\Maui.Kern.csproj|solutionrelative:maui.kern\\generisch\\jsoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|c:\\users\\u731233\\source\\repos\\maui.kern\\maui.app\\attributes\\autospeicherattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|solutionrelative:maui.app\\attributes\\autospeicherattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|c:\\users\\u731233\\source\\repos\\maui.kern\\maui.app\\mvvm\\viewmodel\\sammlungmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|solutionrelative:maui.app\\mvvm\\viewmodel\\sammlungmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JsonController.cs",
+              "DocumentMoniker": "C:\\Users\\U731233\\source\\repos\\Maui.Kern\\Maui.Kern\\Generisch\\JsonController.cs",
+              "RelativeDocumentMoniker": "Maui.Kern\\Generisch\\JsonController.cs",
+              "ToolTip": "C:\\Users\\U731233\\source\\repos\\Maui.Kern\\Maui.Kern\\Generisch\\JsonController.cs",
+              "RelativeToolTip": "Maui.Kern\\Generisch\\JsonController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T16:28:16.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SammlungManager.cs",
+              "DocumentMoniker": "C:\\Users\\U731233\\source\\repos\\Maui.Kern\\Maui.App\\MVVM\\ViewModel\\SammlungManager.cs",
+              "RelativeDocumentMoniker": "Maui.App\\MVVM\\ViewModel\\SammlungManager.cs",
+              "ToolTip": "C:\\Users\\U731233\\source\\repos\\Maui.Kern\\Maui.App\\MVVM\\ViewModel\\SammlungManager.cs",
+              "RelativeToolTip": "Maui.App\\MVVM\\ViewModel\\SammlungManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T14:17:20.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AutoSpeicherAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\U731233\\source\\repos\\Maui.Kern\\Maui.App\\Attributes\\AutoSpeicherAttribute.cs",
+              "RelativeDocumentMoniker": "Maui.App\\Attributes\\AutoSpeicherAttribute.cs",
+              "ToolTip": "C:\\Users\\U731233\\source\\repos\\Maui.Kern\\Maui.App\\Attributes\\AutoSpeicherAttribute.cs",
+              "RelativeToolTip": "Maui.App\\Attributes\\AutoSpeicherAttribute.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T14:09:46.423Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
