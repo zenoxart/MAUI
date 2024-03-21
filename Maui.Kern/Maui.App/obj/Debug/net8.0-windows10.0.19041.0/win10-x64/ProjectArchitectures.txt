@@ -1,7 +1,0 @@
-C:\Users\zenox\Documents\GitHub\MAUI\Maui.Kern\Maui.App\Maui.App.csproj;x64
-C:\Users\zenox\Documents\GitHub\MAUI\Maui.Kern\Maui.DatenObjekte\Maui.DatenObjekte.csproj;neutral
-C:\Users\zenox\Documents\GitHub\MAUI\Maui.Kern\Maui.Erweitert\Maui.Erweitert.csproj;neutral
-C:\Users\zenox\Documents\GitHub\MAUI\Maui.Kern\Maui.Erweitert\Maui.Erweitert.csproj;neutral
-C:\Users\zenox\Documents\GitHub\MAUI\Maui.Kern\Maui.Kern\Maui.Kern.csproj;neutral
-C:\Users\zenox\Documents\GitHub\MAUI\Maui.Kern\Maui.Kern\Maui.Kern.csproj;neutral
-C:\Users\zenox\Documents\GitHub\MAUI\Maui.Kern\Maui.Kern\Maui.Kern.csproj;neutral
