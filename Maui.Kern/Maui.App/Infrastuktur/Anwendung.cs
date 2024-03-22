@@ -106,8 +106,8 @@ namespace Maui.App.Infrastuktur
             {
                 // Öffnet die Tabbed-View der Anwendung
 
-                AppKontext!.Protokoll.Eintragen($"{nameof(MainAppView)} is starting...");
-                await StarteTabbedView<MainAppView>();
+                AppKontext!.Protokoll.Eintragen($"{nameof(TabbedAppPage)} is starting...");
+                await StarteTabbedView<TabbedAppPage>();
             }
         }
 

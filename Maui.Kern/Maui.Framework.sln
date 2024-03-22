@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui.Kern", "Maui.Kern\Maui
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui.Erweitert", "Maui.Erweitert\Maui.Erweitert.csproj", "{9B596F57-465A-47AA-8E4F-2A337AFEA7B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui.App", "Maui.App\Maui.App.csproj", "{95673AB9-76C5-4989-ABE7-FCD5EB47C485}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui.App", "Maui.App\Maui.App.csproj", "{95673AB9-76C5-4989-ABE7-FCD5EB47C485}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui.DatenObjekte", "Maui.DatenObjekte\Maui.DatenObjekte.csproj", "{E9CFA148-BEA6-466A-B3EE-F27D368815C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui.DatenObjekte", "Maui.DatenObjekte\Maui.DatenObjekte.csproj", "{E9CFA148-BEA6-466A-B3EE-F27D368815C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{111F4572-32D8-4070-9A98-7D97841A2E31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

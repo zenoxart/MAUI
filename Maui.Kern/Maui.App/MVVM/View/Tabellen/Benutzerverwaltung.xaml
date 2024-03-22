@@ -2,10 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
 			xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 			x:Class="Maui.App.MVVM.View.Tabellen.Benutzerverwaltung"
-			Title="Benutzerverwaltung"
-			xmlns:converters="clr-namespace:Maui.App.MVVM.Utils"
-			 
-			 >
+			Title="Benutzerverwaltung">
 
 	<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20" Spacing="10">
 		<StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="5">
@@ -37,8 +34,8 @@
 				FontFamily="Webdings" 
 				MinimumWidthRequest="40" 
 				Command="{Binding AppKontext.BenutzerManager.LadeBenutzerListeCommand}"
-				SemanticProperties.Hint="Benutzerinformationen"
-				SemanticProperties.Description="Liefert die Benutzerinformationen des ausgewählten Benutzers"/>
+				SemanticProperties.Hint="Benutzer Blockierung aufheben"
+				SemanticProperties.Description="Hebt die blockierung des ausgewählten Benutzers auf"/>
 		</StackLayout>
 		<ListView 
 				 x:Name="listView"

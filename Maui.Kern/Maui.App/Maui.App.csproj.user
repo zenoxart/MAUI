@@ -15,13 +15,13 @@
     <MauiXaml Update="MVVM\View\LoginPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="MVVM\View\MainAppView.xaml">
+    <MauiXaml Update="MVVM\View\TabbedAppPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="MVVM\View\RegisterPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="MVVM\View\SettingsPage.xaml">
+    <MauiXaml Update="MVVM\View\EinstellungenPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="MVVM\View\Tabellen\Benutzerverwaltung.xaml">
