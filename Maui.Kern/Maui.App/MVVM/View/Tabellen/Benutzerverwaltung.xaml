@@ -26,14 +26,14 @@
 				Text="x" 
 				FontFamily="Webdings" 
 				MinimumWidthRequest="40" 
-				Command="{Binding AppKontext.BenutzerManager.LadeBenutzerListeCommand}"
+				Command="{Binding AppKontext.BenutzerManager.BenutzerBlockierenCommand}"
 				SemanticProperties.Hint="Benutzer Blockieren"
 				SemanticProperties.Description="Blockiert den ausgewählten Benutzer von der Anwendung"/>
 			<Button 
 				Text="a" 
 				FontFamily="Webdings" 
 				MinimumWidthRequest="40" 
-				Command="{Binding AppKontext.BenutzerManager.LadeBenutzerListeCommand}"
+				Command="{Binding AppKontext.BenutzerManager.BenutzerBlockierungAufhebenCommand}"
 				SemanticProperties.Hint="Benutzer Blockierung aufheben"
 				SemanticProperties.Description="Hebt die blockierung des ausgewählten Benutzers auf"/>
 		</StackLayout>
@@ -42,18 +42,16 @@
 				ItemsSource="{Binding AppKontext.BenutzerManager.BenutzerSammlung}"
 				SelectedItem="{Binding AppKontext.BenutzerManager.BenutzerAktuell}"
 				VerticalOptions="FillAndExpand">
-			<ListView.Header >
+			<ListView.Header>
 				<Grid>
 					<Grid.ColumnDefinitions>
 						<ColumnDefinition Width="*" />
-						<ColumnDefinition Width="*" />
-						<ColumnDefinition Width="*" />
-						<ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
 					</Grid.ColumnDefinitions>
 					<Label Text="Id"  Grid.Column="0" />
-					<Label Text="Benutzername"  Grid.Column="1" />
-					<Label Text="Vorname"  Grid.Column="2"/>
-					<Label Text="Nachname"  Grid.Column="3" />
+                    <Label Text="Benutzername"  Grid.Column="1" />
+                    <Label Text="Gebannt"  Grid.Column="2" />
 				</Grid>
 			</ListView.Header>
 			<ListView.ItemTemplate>
@@ -62,14 +60,12 @@
 						<Grid>
 							<Grid.ColumnDefinitions>
 								<ColumnDefinition Width="*" />
-								<ColumnDefinition Width="*" />
-								<ColumnDefinition Width="*" />
-								<ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
 							</Grid.ColumnDefinitions>
 							<Label Text="{Binding Id}" Grid.Column="0" />
-							<Label Text="{Binding Benutzername}" Grid.Column="1" />
-							<Label Text="{Binding Vorname}" Grid.Column="2" />
-							<Label Text="{Binding Nachname}" Grid.Column="3" />
+                            <Label Text="{Binding Benutzername}" Grid.Column="1" />
+                            <CheckBox IsChecked="{Binding Gebannt}" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center" IsEnabled="False"  />
 						</Grid>
 					</ViewCell>
 				</DataTemplate>

@@ -38,6 +38,34 @@ namespace Maui.App.MVVM.ViewModel.CollectionManager
         }
 
         /// <summary>
+        /// Läd die PersonenListe Asyncron von der Datenbank
+        /// </summary>
+        /// <returns></returns>
+        [CommunityToolkit.Mvvm.Input.RelayCommand]
+        private void BenutzerBlockieren()
+        {
+            if (this.AppKontext != null && BenutzerAktuell != null && !BenutzerAktuell.Gebannt)
+            {
+                BenutzerAktuell.Gebannt = true;
+                // TODO: Auf der Datenbank aktuallisieren
+            }
+        }
+        
+        /// <summary>
+        /// Läd die PersonenListe Asyncron von der Datenbank
+        /// </summary>
+        /// <returns></returns>
+        [CommunityToolkit.Mvvm.Input.RelayCommand]
+        private void BenutzerBlockierungAufheben()
+        {
+            if (this.AppKontext != null && BenutzerAktuell != null && BenutzerAktuell.Gebannt)
+            {
+                BenutzerAktuell.Gebannt = false;
+                // TODO: Auf der Datenbank aktuallisieren
+            }
+        }
+
+        /// <summary>
         /// Stellt eine Liste an Personen zur Verfügung oder setzt diese
         /// </summary>
         [ObservableProperty]

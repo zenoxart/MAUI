@@ -70,6 +70,8 @@ namespace Maui.DatenObjekte.Benutzer
         [ObservableProperty]
         BenutzerRollen rolle;
 
+
+
        
     }
 }

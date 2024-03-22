@@ -88,6 +88,12 @@
 	  <Compile Update="MVVM\Controls\RegisterControl.xaml.cs">
 	    <DependentUpon>RegisterControl.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="MVVM\View\EinstellungenPage.xaml.cs">
+	    <DependentUpon>EinstellungenPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="MVVM\View\TabbedAppPage.xaml.cs">
+	    <DependentUpon>TabbedAppPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Properties\Resources.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
@@ -127,13 +133,13 @@
 	  <MauiXaml Update="MVVM\View\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MVVM\View\MainAppView.xaml">
+	  <MauiXaml Update="MVVM\View\TabbedAppPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MVVM\View\RegisterPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MVVM\View\SettingsPage.xaml">
+	  <MauiXaml Update="MVVM\View\EinstellungenPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MVVM\View\Tabellen\Benutzerverwaltung.xaml">
