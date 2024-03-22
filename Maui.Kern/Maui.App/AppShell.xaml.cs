@@ -52,13 +52,9 @@ namespace Maui.App
         ///</summary>
         protected void MainAppProcess()
         {
-            var AppKontext = new MauiAppKontext();
 
-
-            // Ein Anwendungsfenster initialisieren
-            // und sicherstellen, dass das Windows Forms Dispose läuft
-            AnwendungApp = AppKontext
-                             .Produziere<Anwendung>();
+            // Ein Anwendungsfenster mit der Infrastruktur initialisieren
+            AnwendungApp = new Anwendung();
 
             // Setze den BindingContext der gesammten Anwendung auf die eigene Infrastruktur
             Application.Current!.BindingContext = AnwendungApp;

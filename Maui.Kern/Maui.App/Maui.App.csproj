@@ -130,6 +130,9 @@
 	  <MauiXaml Update="MVVM\Controls\TableFilterControl.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="MVVM\View\Administration\Benutzerinformation.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="MVVM\View\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -142,7 +145,7 @@
 	  <MauiXaml Update="MVVM\View\EinstellungenPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MVVM\View\Tabellen\Benutzerverwaltung.xaml">
+	  <MauiXaml Update="MVVM\View\Administration\Benutzerverwaltung.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

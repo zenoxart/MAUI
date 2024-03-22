@@ -3,19 +3,39 @@
   "WorkspaceRootPath": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|c:\\users\\zenox\\documents\\github\\maui\\maui.kern\\maui.app\\mvvm\\view\\tabellen\\benutzerverwaltung.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|solutionrelative:maui.app\\mvvm\\view\\tabellen\\benutzerverwaltung.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Maui.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|c:\\users\\zenox\\documents\\github\\maui\\maui.kern\\maui.app\\mvvm\\view\\administration\\benutzerverwaltung.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|solutionrelative:maui.app\\mvvm\\view\\administration\\benutzerverwaltung.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|c:\\users\\zenox\\documents\\github\\maui\\maui.kern\\maui.app\\mvvm\\viewmodel\\collectionmanager\\benutzerverwaltungsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|solutionrelative:maui.app\\mvvm\\viewmodel\\collectionmanager\\benutzerverwaltungsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zenox\\AppData\\Local\\Temp\\VSGeneratedDocuments\\16c15e06-51cf-6bcc-7072-0270efa18579\\Maui.DatenObjekte.Benutzer.BenutzerDto.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|c:\\users\\zenox\\documents\\github\\maui\\maui.kern\\maui.app\\mvvm\\viewmodel\\sammlungmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|solutionrelative:maui.app\\mvvm\\viewmodel\\sammlungmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9CFA148-BEA6-466A-B3EE-F27D368815C4}|Maui.DatenObjekte\\Maui.DatenObjekte.csproj|c:\\users\\zenox\\documents\\github\\maui\\maui.kern\\maui.datenobjekte\\benutzer\\benutzerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9CFA148-BEA6-466A-B3EE-F27D368815C4}|Maui.DatenObjekte\\Maui.DatenObjekte.csproj|solutionrelative:maui.datenobjekte\\benutzer\\benutzerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|c:\\users\\zenox\\documents\\github\\maui\\maui.kern\\maui.app\\mvvm\\view\\administration\\benutzerinformation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|solutionrelative:maui.app\\mvvm\\view\\administration\\benutzerinformation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|c:\\users\\zenox\\documents\\github\\maui\\maui.kern\\maui.app\\appshell.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|solutionrelative:maui.app\\appshell.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|c:\\users\\zenox\\documents\\github\\maui\\maui.kern\\maui.app\\infrastuktur\\anwendung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95673AB9-76C5-4989-ABE7-FCD5EB47C485}|Maui.App\\Maui.App.csproj|solutionrelative:maui.app\\infrastuktur\\anwendung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zenox\\AppData\\Local\\Temp\\VSGeneratedDocuments\\16c15e06-51cf-6bcc-7072-0270efa18579\\Maui.DatenObjekte.Benutzer.BenutzerDto.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,7 +45,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,13 +53,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "App.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "RelativeDocumentMoniker": "Maui.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ToolTip": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "RelativeToolTip": "Maui.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAvwB4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:58:38.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "Maui.App\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\AppShell.xaml.cs",
+              "RelativeToolTip": "Maui.App\\AppShell.xaml.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:48:50.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Benutzerinformation.xaml",
+              "DocumentMoniker": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\MVVM\\View\\Administration\\Benutzerinformation.xaml",
+              "RelativeDocumentMoniker": "Maui.App\\MVVM\\View\\Administration\\Benutzerinformation.xaml",
+              "ToolTip": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\MVVM\\View\\Administration\\Benutzerinformation.xaml",
+              "RelativeToolTip": "Maui.App\\MVVM\\View\\Administration\\Benutzerinformation.xaml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAEIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-22T00:47:06.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "BenutzerDto.cs",
               "DocumentMoniker": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.DatenObjekte\\Benutzer\\BenutzerDto.cs",
               "RelativeDocumentMoniker": "Maui.DatenObjekte\\Benutzer\\BenutzerDto.cs",
               "ToolTip": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.DatenObjekte\\Benutzer\\BenutzerDto.cs",
               "RelativeToolTip": "Maui.DatenObjekte\\Benutzer\\BenutzerDto.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAADIAAAAWAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAEAAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-22T00:35:16.997Z",
               "EditorCaption": ""
@@ -47,6 +106,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "BenutzerVerwaltungsManager.cs",
+              "DocumentMoniker": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\MVVM\\ViewModel\\CollectionManager\\BenutzerVerwaltungsManager.cs",
+              "RelativeDocumentMoniker": "Maui.App\\MVVM\\ViewModel\\CollectionManager\\BenutzerVerwaltungsManager.cs",
+              "ToolTip": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\MVVM\\ViewModel\\CollectionManager\\BenutzerVerwaltungsManager.cs",
+              "RelativeToolTip": "Maui.App\\MVVM\\ViewModel\\CollectionManager\\BenutzerVerwaltungsManager.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAAEgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T00:27:53.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Benutzerverwaltung.xaml",
+              "DocumentMoniker": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\MVVM\\View\\Administration\\Benutzerverwaltung.xaml",
+              "RelativeDocumentMoniker": "Maui.App\\MVVM\\View\\Administration\\Benutzerverwaltung.xaml",
+              "ToolTip": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\MVVM\\View\\Administration\\Benutzerverwaltung.xaml",
+              "RelativeToolTip": "Maui.App\\MVVM\\View\\Administration\\Benutzerverwaltung.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-22T00:05:43.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Anwendung.cs",
+              "DocumentMoniker": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\Infrastuktur\\Anwendung.cs",
+              "RelativeDocumentMoniker": "Maui.App\\Infrastuktur\\Anwendung.cs",
+              "ToolTip": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\Infrastuktur\\Anwendung.cs",
+              "RelativeToolTip": "Maui.App\\Infrastuktur\\Anwendung.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAQwBUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:49:25.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SammlungManager.cs",
+              "DocumentMoniker": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\MVVM\\ViewModel\\SammlungManager.cs",
+              "RelativeDocumentMoniker": "Maui.App\\MVVM\\ViewModel\\SammlungManager.cs",
+              "ToolTip": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\MVVM\\ViewModel\\SammlungManager.cs",
+              "RelativeToolTip": "Maui.App\\MVVM\\ViewModel\\SammlungManager.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:54:37.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Maui.DatenObjekte.Benutzer.BenutzerDto.g.cs [generiert]",
               "DocumentMoniker": "C:\\Users\\zenox\\AppData\\Local\\Temp\\VSGeneratedDocuments\\16c15e06-51cf-6bcc-7072-0270efa18579\\Maui.DatenObjekte.Benutzer.BenutzerDto.g.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\VSGeneratedDocuments\\16c15e06-51cf-6bcc-7072-0270efa18579\\Maui.DatenObjekte.Benutzer.BenutzerDto.g.cs",
@@ -55,32 +166,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "OverriddenToolTip": "Maui.DatenObjekte.Benutzer.BenutzerDto.g.cs [generiert von \u0022CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\u0022]",
               "WhenOpened": "2024-03-22T00:30:35.496Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BenutzerVerwaltungsManager.cs",
-              "DocumentMoniker": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\MVVM\\ViewModel\\CollectionManager\\BenutzerVerwaltungsManager.cs",
-              "RelativeDocumentMoniker": "Maui.App\\MVVM\\ViewModel\\CollectionManager\\BenutzerVerwaltungsManager.cs",
-              "ToolTip": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\MVVM\\ViewModel\\CollectionManager\\BenutzerVerwaltungsManager.cs",
-              "RelativeToolTip": "Maui.App\\MVVM\\ViewModel\\CollectionManager\\BenutzerVerwaltungsManager.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAgwD4AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T00:27:53.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Benutzerverwaltung.xaml",
-              "DocumentMoniker": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\MVVM\\View\\Tabellen\\Benutzerverwaltung.xaml",
-              "RelativeDocumentMoniker": "Maui.App\\MVVM\\View\\Tabellen\\Benutzerverwaltung.xaml",
-              "ToolTip": "C:\\Users\\zenox\\Documents\\GitHub\\MAUI\\Maui.Kern\\Maui.App\\MVVM\\View\\Tabellen\\Benutzerverwaltung.xaml",
-              "RelativeToolTip": "Maui.App\\MVVM\\View\\Tabellen\\Benutzerverwaltung.xaml",
-              "ViewState": "AQIAACsAAAAAAAAAAAAYwDkAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-22T00:05:43.798Z",
               "EditorCaption": ""
             }
           ]

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
 			xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-			x:Class="Maui.App.MVVM.View.Tabellen.Benutzerverwaltung"
+			x:Class="Maui.App.MVVM.View.Administration.Benutzerverwaltung"
 			Title="Benutzerverwaltung">
 
-	<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20" Spacing="10">
+	<StackLayout Padding="20" Spacing="10">
 		<StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="5">
 
 			<Button 
@@ -19,7 +19,7 @@
 				Text="i" 
 				FontFamily="Webdings" 
 				MinimumWidthRequest="40" 
-				Command="{Binding AppKontext.BenutzerManager.LadeBenutzerListeCommand}"
+				Command="{Binding AppKontext.BenutzerManager.BenutzerInformationAnzeigenCommand}"
 				SemanticProperties.Hint="Benutzerinformationen"
 				SemanticProperties.Description="Liefert die Benutzerinformationen des ausgewählten Benutzers"/>
 			<Button 

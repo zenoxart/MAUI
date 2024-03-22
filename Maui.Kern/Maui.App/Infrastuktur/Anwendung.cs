@@ -4,8 +4,10 @@ using Maui.App.Infrastuktur;
 using Maui.App.MVVM.View;
 using Maui.App.MVVM.ViewModel;
 using Maui.App.MVVM.ViewModel.CollectionManager;
+using Maui.DatenObjekte.Benutzer;
 using Maui.Kern.Daten;
 using Microsoft.Maui.Controls;
+using System;
 using System.Globalization;
 
 namespace Maui.App.Infrastuktur
@@ -15,6 +17,16 @@ namespace Maui.App.Infrastuktur
     /// </summary>
     public sealed partial class Anwendung : MauiAppObjekt
     {
+        public Anwendung()
+        {
+            // um einen Pointer zum Zugriff auf die Anwendung bereitzustellen
+            this.AppKontext = new MauiAppKontext(this);
+
+            BenutzerRollen = Enum.GetNames(typeof(BenutzerRollen)).ToList();
+        }
+
+        
+
         #region Init with Binding-Context
 
         /// <summary>
@@ -110,6 +122,14 @@ namespace Maui.App.Infrastuktur
                 await StarteTabbedView<TabbedAppPage>();
             }
         }
+
+        #endregion
+
+        #region Benutzer-Rollen-Verwaltung
+        /// <summary>
+        /// Besitzt eine Liste mit allen anwendungsweiten Benutzerrollen
+        /// </summary>
+        public IEnumerable<string> BenutzerRollen { get; }
 
         #endregion
     }

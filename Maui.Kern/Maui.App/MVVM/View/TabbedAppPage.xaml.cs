@@ -1,5 +1,5 @@
 using Maui.App.Infrastuktur;
-using Maui.App.MVVM.View.Tabellen;
+using Maui.App.MVVM.View.Administration;
 
 namespace Maui.App.MVVM.View;
 

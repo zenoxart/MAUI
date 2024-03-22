@@ -26,6 +26,20 @@ namespace Maui.App.Infrastuktur
     public class MauiAppKontext : Erweitert.ViewModelAppKontext
     {
         #region Infrastruktur-Prozess
+
+        public MauiAppKontext(Anwendung anwendung)
+        {
+            Anwendung = anwendung;
+        }
+
+        /// <summary>
+        /// Ist ein Verweiß auf die Gesammt-Anwendung
+        /// </summary>
+        /// <remarks>
+        /// Wird benötigt um jederzeit aus dem AppKontext auf die übergeordnete Ebene zugreifen zu können
+        /// </remarks>
+        public Anwendung Anwendung { get; }
+
         public override T Produziere<T>()
         {
             // Zuerst einmal das machen,

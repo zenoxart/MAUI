@@ -13,7 +13,7 @@ namespace Maui.App.Infrastuktur
     /// Stellt die Grundlage für Maui ViewModels
     /// bereit und unterstützt diese mit der Infrastruktur
     /// </summary>
-    public class MauiAppObjekt : ViewModelAppObjekt, IAppKontext
+    public class MauiAppObjekt : ViewModelAppObjekt
     {
         /// <summary>
         /// Ruft die erweiterte Infrastruktur

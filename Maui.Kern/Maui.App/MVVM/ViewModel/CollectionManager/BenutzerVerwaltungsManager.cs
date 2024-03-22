@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Maui.App.MVVM.View.Administration;
 using Maui.DatenObjekte;
 using Maui.DatenObjekte.Benutzer;
 using Maui.Erweitert.Daten;
@@ -21,7 +22,6 @@ namespace Maui.App.MVVM.ViewModel.CollectionManager
         /// <summary>
         /// Läd die PersonenListe Asyncron von der Datenbank
         /// </summary>
-        /// <returns></returns>
         [CommunityToolkit.Mvvm.Input.RelayCommand]
         private void LadeBenutzerListe()
         {
@@ -38,9 +38,8 @@ namespace Maui.App.MVVM.ViewModel.CollectionManager
         }
 
         /// <summary>
-        /// Läd die PersonenListe Asyncron von der Datenbank
+        /// Blockiert den Benutzer Asyncron in der Datenbank
         /// </summary>
-        /// <returns></returns>
         [CommunityToolkit.Mvvm.Input.RelayCommand]
         private void BenutzerBlockieren()
         {
@@ -52,9 +51,8 @@ namespace Maui.App.MVVM.ViewModel.CollectionManager
         }
         
         /// <summary>
-        /// Läd die PersonenListe Asyncron von der Datenbank
+        /// Hebt die Blockierung des Benutzers in der Datenbank auf
         /// </summary>
-        /// <returns></returns>
         [CommunityToolkit.Mvvm.Input.RelayCommand]
         private void BenutzerBlockierungAufheben()
         {
@@ -63,6 +61,20 @@ namespace Maui.App.MVVM.ViewModel.CollectionManager
                 BenutzerAktuell.Gebannt = false;
                 // TODO: Auf der Datenbank aktuallisieren
             }
+        }
+
+        /// <summary>
+        /// Läd die PersonenListe Asyncron von der Datenbank
+        /// </summary>
+        /// <returns></returns>
+        [CommunityToolkit.Mvvm.Input.RelayCommand]
+        private void BenutzerInformationAnzeigen()
+        {
+            if (this.AppKontext != null && this.AppKontext.Anwendung != null && BenutzerAktuell != null)
+            {
+               this.AppKontext.Anwendung.Starten<Benutzerinformation>();
+            }
+
         }
 
         /// <summary>

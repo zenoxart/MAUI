@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui.App.MVVM.View.Administration.Benutzerinformation"
+             Title="Benutzerinformation">
+    <VerticalStackLayout VerticalOptions="StartAndExpand" Spacing="10">
+
+        <!--BenutzerID-->
+        <!--Benutzername-->
+        <!--Benutzeronlinestatus-->
+        <HorizontalStackLayout>
+            <Label 
+                Text="{Binding AppKontext.BenutzerManager.BenutzerAktuell.Id}"
+                FontSize="Title"
+                />
+            <Label
+                Text="{Binding AppKontext.BenutzerManager.BenutzerAktuell.Benutzername}"
+                FontSize="Title"
+                />
+            <CheckBox
+                IsChecked="{Binding AppKontext.BenutzerManager.BenutzerAktuell.Online}"
+                IsEnabled="False"
+                />
+        </HorizontalStackLayout>
+
+
+        <!--Benutzergebanntstatus-->
+        <HorizontalStackLayout IsVisible="{Binding AppKontext.BenutzerManager.BenutzerAktuell.Gebannt}">
+            <Border Background="Red">
+                <Label
+                    Text="This User is banned!"/>
+            </Border>
+        </HorizontalStackLayout>
+
+        <!--Benutzervorname-->
+        <!--Benutzernachname-->
+        <HorizontalStackLayout>
+            <Label Text="Name: "/>
+            <Label
+                Text="{Binding AppKontext.BenutzerManager.BenutzerAktuell.Vorname}"
+                />
+            <Label
+                Text="{Binding AppKontext.BenutzerManager.BenutzerAktuell.Nachname}"
+                />
+            
+        </HorizontalStackLayout>
+
+        <!--Benutzeremail-->
+        <HorizontalStackLayout>
+            <Label Text="Email: "/>
+            <Label
+                Text="{Binding AppKontext.BenutzerManager.BenutzerAktuell.Email}"
+                />
+
+        </HorizontalStackLayout>
+
+        <!--Benutzerrolle & möglichkeit zu ändern (Combobox)-->
+        <HorizontalStackLayout>
+            <Picker
+                ItemsSource="{Binding BenutzerRollen}"
+                SelectedItem="{Binding AppKontext.BenutzerManager.BenutzerAktuell.Rolle}"
+                />
+
+        </HorizontalStackLayout>
+
+        <!--Benutzerletzerlogin-->
+        <HorizontalStackLayout>
+            <DatePicker
+                Date="{Binding AppKontext.BenutzerManager.BenutzerAktuell.letzerLoggin}"
+                IsEnabled="False"
+                />
+
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

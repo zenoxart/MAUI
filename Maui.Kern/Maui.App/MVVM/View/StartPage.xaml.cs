@@ -1,6 +1,5 @@
 ﻿using Maui.App.Infrastuktur;
 using Maui.App.MVVM.View;
-using Maui.App.MVVM.View.Tabellen;
 using Maui.Kern;
 using System.Globalization;
 using System.Resources;

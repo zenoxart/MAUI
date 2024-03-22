@@ -12,6 +12,9 @@
     <MauiXaml Update="MVVM\Controls\RegisterControl.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="MVVM\View\Administration\Benutzerinformation.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="MVVM\View\LoginPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
@@ -24,7 +27,7 @@
     <MauiXaml Update="MVVM\View\EinstellungenPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="MVVM\View\Tabellen\Benutzerverwaltung.xaml">
+    <MauiXaml Update="MVVM\View\Administration\Benutzerverwaltung.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
