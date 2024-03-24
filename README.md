@@ -1,5 +1,5 @@
 # Maui-Framework 🔮
-Enthält eine **.NET 6 MAUI Kern-Anwendung** plus Erweiterung für eine **MVVM-Architektur**
+Enthält eine **.NET 8 MAUI Kern-Anwendung** plus Erweiterung für eine **MVVM-Architektur**
 
 Die Anwendungen sind für .NET & MAUI ausgelegt!
 Die Klassen funktionieren genauso in WinForms, WPF & UWP.
