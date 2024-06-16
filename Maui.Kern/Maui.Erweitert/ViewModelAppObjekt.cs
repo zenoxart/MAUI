@@ -1,4 +1,5 @@
 ﻿using Maui.Kern;
+using Maui.Kern.Manager.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -75,42 +76,7 @@ namespace Maui.Erweitert
 			}
 		}
 
-		/// <summary>
-		/// Schaltet IstBeschäftigt ein und erstellt
-		/// einen Protokolleintrag, dass die Methode
-		/// zu laufen beginnt
-		/// </summary>
-		/// <param name="methodenName">Name der Methode,
-		/// deren Start protokolliert werden soll</param>
-		/// <remarks>Sollte der Methodenname nicht angegeben
-		/// sein, wird automatisch der Name der 
-		/// aufrufenden Methode benutzt</remarks>
-		protected virtual void StartProtokollieren(
-			[System.Runtime.CompilerServices.CallerMemberName]
-			string methodenName = "")
-		{
-			this.IstBeschäftigt = true;
-			this.AppKontext?.Protokoll.Eintragen($"{this}.{methodenName} starts running...");
-		}
-
-		/// <summary>
-		/// Schaltet IstBeschäftigt aus und erstellt
-		/// einen Protokolleintrag, dass die Methode
-		/// beendet ist
-		/// </summary>
-		/// <param name="methodenName">Name der Methode,
-		/// deren Ende protokolliert werden soll</param>
-		/// <remarks>Sollte der Methodenname nicht angegeben
-		/// sein, wird automatisch der Name der 
-		/// aufrufenden Methode benutzt</remarks>
-		protected virtual void EndeProtokollieren(
-			[System.Runtime.CompilerServices.CallerMemberName]
-			string methodenName = "")
-		{
-			this.AppKontext?.Protokoll.Eintragen($"{this}.{methodenName} ended.");
-			this.IstBeschäftigt = false;
-		}
-
+		
 		/// <summary>
 		/// Stellt sicher, dass eine Änderung
 		/// von IstBeschäftigt auch in dem anderen
@@ -130,7 +96,7 @@ namespace Maui.Erweitert
 				}
 			};
 
-			this.AppKontext?.Protokoll.Eintragen(
+            LogManager.Info(
 				$"{this} shares {nameof(mitViewModel.IstBeschäftigt)} {mitViewModel} with...");
 		}
 

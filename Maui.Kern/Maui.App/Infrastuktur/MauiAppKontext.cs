@@ -6,9 +6,9 @@ using Maui.App.MVVM.ViewModel.CollectionManager;
 using Maui.DatenObjekte;
 using Maui.Erweitert.Daten;
 using Maui.Erweitert.Komponenten;
-using Maui.Erweitert.Manager;
 using Maui.Kern;
 using Maui.Kern.Daten;
+using Maui.Kern.Manager.Logging;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -50,28 +50,23 @@ namespace Maui.App.Infrastuktur
             // dass ein neues Anwendungsobjekt
             // erstellt wurde. Damit keine Rekursion
             // eintritt, mit Ausnahme vom Protokoll
-            if (NeuesAppObjekt is not ProtokollManager)
+            LogManager.Info(
+                $"{NeuesAppObjekt} was produced.");
+
+            // Bei Anwendungsobjekten dafür sorgen,
+            // dass die Ursache von FehlerAufgetreten
+            // im Protokoll steht
+
+
+            if (NeuesAppObjekt is MauiAppObjekt AppObjekt)
             {
-                Protokoll.Eintragen(
-                    $"{NeuesAppObjekt} was produced.",
-                    ProtokollEintragTyp.NeueInstanz);
+                AppObjekt.FehlerAufgetreten
+                    // --- Ereignisbehandler
+                    += (sender, e) => LogManager.Error(
+                        $"{AppObjekt} triggers an exception:\r\n{e.Ursache?.Message}");
+                // ----------------------
 
-                // Bei Anwendungsobjekten dafür sorgen,
-                // dass die Ursache von FehlerAufgetreten
-                // im Protokoll steht
-
-
-                if (NeuesAppObjekt is MauiAppObjekt AppObjekt)
-                {
-                    AppObjekt.FehlerAufgetreten
-                        // --- Ereignisbehandler
-                        += (sender, e) => Protokoll.Eintragen(
-                            $"{AppObjekt} triggers an exception:\r\n{e.Ursache?.Message}",
-                            ProtokollEintragTyp.Fehler);
-                    // ----------------------
-
-                    Protokoll.Eintragen($"{AppObjekt} handles {nameof(AppObjekt.FehlerAufgetreten)}...");
-                }
+                LogManager.Info($"{AppObjekt} handles {nameof(AppObjekt.FehlerAufgetreten)}...");
             }
 
             // Neues Objekt liefern...

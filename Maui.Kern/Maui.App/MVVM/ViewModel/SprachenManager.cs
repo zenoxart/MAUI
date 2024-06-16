@@ -12,6 +12,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Maui.Kern.Manager.Logging;
 
 namespace Maui.App.MVVM.ViewModel
 {
@@ -26,6 +27,8 @@ namespace Maui.App.MVVM.ViewModel
         public LocalizationManager()
         {
             Properties.Texte.Culture = CultureInfo.CurrentCulture;
+
+            LogManager.Info($"{this.GetType().Name} was initialized successfully");
         }
         /// <summary>
         /// Stellt eine statische Instanz um Zugriff auf die aktuelle Lokalisierung zu bekommen

@@ -1,4 +1,6 @@
-﻿namespace Maui.Erweitert.Udp
+﻿using Maui.Kern.Manager.Logging;
+
+namespace Maui.Erweitert.Udp
 {
     /// <summary>
     /// Stellt einen Client zum Verwalten von User Datagram Protocol-Verbindungen
@@ -41,6 +43,9 @@
         /// </summary>
         private System.Net.EndPoint _EndPunktServer;
 
+        /// <summary>
+        /// Definiert den EndPunkt des UDP-Servers
+        /// </summary>
         public System.Net.EndPoint EndPunktServer
         {
             get => this._EndPunktServer;
@@ -87,6 +92,7 @@
                          new AsyncCallback(OnSend),
                          null);
 
+                    LogManager.Info($"The UDP-Conncetions was build up correctly!");
                     return true;
 
                 }
@@ -97,7 +103,7 @@
             }
             catch (Exception ex)
             {
-                this.OnFehlerAufgetreten(new Kern.FehlerAufgetretenEventArgs(ex));
+                LogManager.Error($"An Error occured while building up the UDP-Conncetion: {ex.StackTrace}");
                 return false;
             }
 

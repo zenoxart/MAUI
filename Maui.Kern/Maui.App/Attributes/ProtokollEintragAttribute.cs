@@ -1,4 +1,5 @@
 ﻿using Maui.App.Infrastuktur;
+using Maui.Kern.Manager.Logging;
 
 namespace Maui.App.Attributes
 {
@@ -8,15 +9,14 @@ namespace Maui.App.Attributes
     [AttributeUsage(AttributeTargets.All)]
     public class ProtokollEintragAttribute : System.Attribute
     {
-        public ProtokollEintragAttribute(string eintrag, Erweitert.Daten.ProtokollEintragTyp art)
+        public ProtokollEintragAttribute(string eintrag, LogLevel art)
         {
-            Erweitert.Manager.ProtokollManager? Manager = (Application.Current?.BindingContext as Anwendung)?.AppKontext!.Protokoll;
-            Manager?.Eintragen(eintrag, art);
+            LogManager.Log(eintrag, art);
         }
+
         public ProtokollEintragAttribute(string eintrag)
         {
-            Erweitert.Manager.ProtokollManager? Manager = (Application.Current?.BindingContext as Anwendung)?.AppKontext!.Protokoll;
-            Manager?.Eintragen(eintrag, Erweitert.Daten.ProtokollEintragTyp.Normal);
+            LogManager.Info(eintrag);
         }
     }
 }

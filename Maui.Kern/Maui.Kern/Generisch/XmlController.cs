@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Maui.Kern.Manager.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,6 +30,8 @@ namespace Maui.Kern.Generisch
 				using var Schreiber = new System.IO.StreamWriter(inPfad);
 
 				Serialisierer.Serialize(Schreiber, liste);
+
+				LogManager.Info($"{liste.GetType()}-XMLController serialized successfully");
 			}
 
 		}
@@ -44,8 +47,21 @@ namespace Maui.Kern.Generisch
 			System.Xml.Serialization.XmlSerializer Serialisierer = new(typeof(T));
 
 			using var Leser = new System.IO.StreamReader(ausPfad);
+			T obj;
 
-			return (T)Serialisierer.Deserialize(Leser)!;
+            try
+			{
+				obj = (T)Serialisierer.Deserialize(Leser)!;
+
+                LogManager.Info($"{obj.GetType()}-XMLController deserialized successfully");
+            }
+			catch (Exception e)
+			{
+
+                LogManager.Info($"{typeof(T).Name}-XMLController deserialization had a Problem: {e.StackTrace}");
+                return default;
+            }
+			return obj;
 		}
 	}
 }

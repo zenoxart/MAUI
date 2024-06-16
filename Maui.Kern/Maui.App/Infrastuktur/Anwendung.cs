@@ -23,9 +23,7 @@ namespace Maui.App.Infrastuktur
             this.AppKontext = new MauiAppKontext(this);
 
             BenutzerRollen = Enum.GetNames(typeof(BenutzerRollen)).ToList();
-        }
-
-        
+        }             
 
         #region Init with Binding-Context
 
@@ -62,8 +60,6 @@ namespace Maui.App.Infrastuktur
 
         #endregion
 
-
-
         #region Sprachenspezifische Eigenschaften
 
 
@@ -96,7 +92,6 @@ namespace Maui.App.Infrastuktur
 
         #endregion
 
-
         #region Anwendungsweite Befehle
         /// <summary>
         /// Öffnet die entsprechende Anzeige im Startmenü
@@ -111,14 +106,14 @@ namespace Maui.App.Infrastuktur
             {
                 // Öffnet den Login-Screen
 
-                AppKontext!.Protokoll.Eintragen($"{nameof(LoginPage)} is starting...");
+                Maui.Kern.Manager.Logging.LogManager.Info($"{nameof(LoginPage)} is starting...");
                 await Starten<LoginPage>();
             }
             else
             {
                 // Öffnet die Tabbed-View der Anwendung
 
-                AppKontext!.Protokoll.Eintragen($"{nameof(TabbedAppPage)} is starting...");
+                Maui.Kern.Manager.Logging.LogManager.Info($"{nameof(TabbedAppPage)} is starting...");
                 await StarteTabbedView<TabbedAppPage>();
             }
         }

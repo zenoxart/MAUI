@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Maui.Kern.Manager.Logging;
 
 namespace Maui.App.MVVM.ViewModel
 {
@@ -15,7 +16,8 @@ namespace Maui.App.MVVM.ViewModel
     {
         public EinstellungsManager()
         {
-            
+
+            LogManager.Info($"{this.GetType().Name} was initialized successfully");
         }
 
     }

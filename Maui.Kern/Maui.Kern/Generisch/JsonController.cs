@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Maui.Kern.Manager.Logging;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,25 +29,34 @@ namespace Maui.Kern.Generisch
 			var jsonData = JsonConvert.SerializeObject(data, Formatting.Indented);
 
 			File.WriteAllText(inPfad, jsonData);
-		}
 
-		/// <summary>
-		/// Läd Daten aus einer Datei
-		/// </summary>
-		/// <returns></returns>
-		public T? Laden(string ausPfad)
+            LogManager.Info($"{data.GetType()}-JSONController serialized successfully");
+
+        }
+
+        /// <summary>
+        /// Läd Daten aus einer Datei
+        /// </summary>
+        /// <returns></returns>
+        public T? Laden(string ausPfad)
 		{
-			try
+            T obj;
+            try
 			{
 				var jsonData = File.ReadAllText(ausPfad);
 
-				return JsonConvert.DeserializeObject<T>(jsonData);
+                obj = JsonConvert.DeserializeObject<T>(jsonData);
+                LogManager.Info($"{obj.GetType()}-JSONController deserialized successfully");
+
+            }
+            catch (Exception e)
+            {
+
+                LogManager.Info($"{typeof(T).Name}-JSONController deserialization had a Problem: {e.StackTrace}");
+                return default;
 			}
-			catch (Exception)
-			{
-				// Handle file read errors, return default instance, or rethrow the exception
-				return default;
-			}
-		}
+
+            return obj;
+        }
 	}
 }

@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Maui.Kern.Erweiterungen;
+using Maui.Kern.Manager.Logging;
 
 
 namespace Maui.Kern
@@ -28,12 +29,13 @@ namespace Maui.Kern
 		{
 			var NeuesObjekt = new T () { AppKontext = this };
 
+			LogManager.Info("Initialisiert einen neuen AppKontext");
 
 			var AppObjekt = NeuesObjekt as AppObjekt;
 			if (AppObjekt != null)
 			{
 				AppObjekt.FehlerAufgetreten
-					+= (sender, e) => System.Console.WriteLine(
+					+= (sender, e) => LogManager.Error(
 						$"ERROR: Ausname \"{e.Ursache?.Message}\" in Objekt {AppObjekt}");
 			}
 
